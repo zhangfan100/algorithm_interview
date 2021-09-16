@@ -1,7 +1,9 @@
+package dp;
+
 /**
  * 动态规划 背包问题
  */
-public class dp {
+public class 背包问题 {
 
     /**
      * 有一个容量为 V 的背包，和一些物品。这些物品分别有两个属性，体积 w 和价值 v，每种物品只有一个。
@@ -34,6 +36,6 @@ public class dp {
     }
 
     public static void main(String[] args) {
-        new dp().findMaxVal(8,new int[]{2,3,4,5,8},new int[]{3,4,5,6,90});
+        new 背包问题().findMaxVal(8,new int[]{2,3,4,5,8},new int[]{3,4,5,6,90});
     }
 }

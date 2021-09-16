@@ -1,5 +1,8 @@
 package lianbiao;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 2种方法
  * 1、递归反转
@@ -23,9 +26,9 @@ public class 反转链表 {
         return newHeader;
     }
 
-
     // 遍历反转
     public Node reverseList2(Node node) {
+
         // 记录反转的元素
         Node pre = null;
         // 记录下一个位置
