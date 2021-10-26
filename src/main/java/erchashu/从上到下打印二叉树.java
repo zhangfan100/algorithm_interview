@@ -22,10 +22,10 @@ import java.util.ListIterator;
  */
 public class 从上到下打印二叉树 {
     public static void main(String[] args) {
-        TNode data = new TNode(9,
-                new TNode(5, null, null), new TNode(6,
-                new TNode(4, null, new TNode(0,null,null)), new TNode(2, null,
-                                          new TNode(1,null,null))));
+        TreeNode data = new TreeNode(9,
+                new TreeNode(5, null, null), new TreeNode(6,
+                new TreeNode(4, null, new TreeNode(0,null,null)), new TreeNode(2, null,
+                                          new TreeNode(1,null,null))));
         List<DateType> result = new ArrayList<DateType>();
         new 从上到下打印二叉树().printData(data, result);
         printTnode(result);
@@ -55,7 +55,7 @@ public class 从上到下打印二叉树 {
         }
     }
 
-    public void printData(TNode node, List<DateType> data) {
+    public void printData(TreeNode node, List<DateType> data) {
         if (node != null) {
             if (node.left != null && node.right != null) {
                 data.add(new DateType(DateType.NOTLEAF, node.val));
