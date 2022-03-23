@@ -27,7 +27,7 @@ public class 反转链表 {
     }
 
     // 遍历反转
-    public Node reverseList2(Node node) {
+    public Node  reverseList2(Node node) {
 
         // 记录反转的元素
         Node pre = null;
@@ -58,6 +58,18 @@ public class 反转链表 {
         Util.print("反转前",node);
         Util.print("遍历反转后",new 反转链表().reverseList2(node));
 
+    }
+
+
+    public Node fz(Node header){
+        if(header == null || header.next == null){
+            return header;
+        }
+        Node next = header.next;
+        Node newNode = fz(header.next);
+        next.next=header;
+        header.next=null;
+        return newNode;
     }
 }
 

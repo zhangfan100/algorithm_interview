@@ -6,7 +6,7 @@ package str;
 public class 返回最长无重复字符串长度 {
     public static void main(String[] args) {
         String str = "yabcdefggoplkjdscbng";
-        System.out.println(new 返回最长无重复字符串长度().getMaxSub1(str));
+        System.out.println(new 返回最长无重复字符串长度().getMaxSub(str));
     }
 
     public int getMaxSub(String str){
