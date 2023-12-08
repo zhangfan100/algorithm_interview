@@ -62,12 +62,12 @@ public class 反转链表 {
 
 
     public Node fz(Node header){
-        if(header == null || header.next == null){
+        if (header == null || header.next==null){
             return header;
         }
-        Node next = header.next;
+        Node preNode = header.next;
         Node newNode = fz(header.next);
-        next.next=header;
+        preNode.next = header;
         header.next=null;
         return newNode;
     }
